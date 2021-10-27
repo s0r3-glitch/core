@@ -38,3 +38,6 @@ def title(text):
 		ctypes.windll.kernel32.SetConsoleTitleW(text)
 	elif name == "posix":
 		sys.stdout.write(f"\x1b]2;{text}\x07")
+		
+if __name__ is "__main__":
+  print('This file is not designed to run alone.')
